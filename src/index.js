@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false })); // serve para entender para
 //  res.send('Ok !')
 //})
 
-require("./controllers/authController")(app); // aqui eu referencio o arquivo authController dentro da aplicação principal
-require("./controllers/projectsController")(app); // aqui eu referencio o arquivo projects dentro da aplicação principal
+//require("./controllers/authController")(app); // aqui eu referencio o arquivo authController dentro da aplicação principal
+//require("./controllers/projectsController")(app); // aqui eu referencio o arquivo projects dentro da aplicação principal
+
+require("./app/controllers/index")(app); // todos os controllers que criarmos agora serão adicionados automaticamente ao nosso projeto.
 app.listen(3000);
